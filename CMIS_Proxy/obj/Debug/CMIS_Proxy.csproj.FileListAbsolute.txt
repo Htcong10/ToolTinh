@@ -1,0 +1,16 @@
+D:\Code\Billing\CMIS_Proxy\bin\Debug\CMIS_Proxy.dll
+D:\Code\Billing\CMIS_Proxy\bin\Debug\CMIS_Proxy.pdb
+D:\Code\Billing\CMIS_Proxy\obj\Debug\ResolveAssemblyReference.cache
+D:\Code\Billing\CMIS_Proxy\obj\Debug\CMIS_Proxy.dll
+D:\Code\Billing\CMIS_Proxy\obj\Debug\CMIS_Proxy.pdb
+E:\Billing\CMIS_Proxy\bin\Debug\CMIS_Proxy.dll
+E:\Billing\CMIS_Proxy\bin\Debug\CMIS_Proxy.pdb
+E:\Billing\CMIS_Proxy\obj\Debug\CMIS_Proxy.csprojAssemblyReference.cache
+E:\Billing\CMIS_Proxy\obj\Debug\CMIS_Proxy.dll
+E:\Billing\CMIS_Proxy\obj\Debug\CMIS_Proxy.pdb
+C:\Code\CMIS4\02_Development\03_Coding\Billing\CMIS_Proxy\bin\Debug\CMIS_Proxy.dll
+C:\Code\CMIS4\02_Development\03_Coding\Billing\CMIS_Proxy\bin\Debug\CMIS_Proxy.pdb
+C:\Code\CMIS4\02_Development\03_Coding\Billing\CMIS_Proxy\obj\Debug\CMIS_Proxy.csproj.AssemblyReference.cache
+C:\Code\CMIS4\02_Development\03_Coding\Billing\CMIS_Proxy\obj\Debug\CMIS_Proxy.csproj.CoreCompileInputs.cache
+C:\Code\CMIS4\02_Development\03_Coding\Billing\CMIS_Proxy\obj\Debug\CMIS_Proxy.dll
+C:\Code\CMIS4\02_Development\03_Coding\Billing\CMIS_Proxy\obj\Debug\CMIS_Proxy.pdb

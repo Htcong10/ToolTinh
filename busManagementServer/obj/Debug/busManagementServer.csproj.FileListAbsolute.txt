@@ -1,0 +1,16 @@
+D:\Code\Billing\busManagementServer\bin\Debug\busManagementServer.dll
+D:\Code\Billing\busManagementServer\bin\Debug\busManagementServer.pdb
+D:\Code\Billing\busManagementServer\obj\Debug\ResolveAssemblyReference.cache
+D:\Code\Billing\busManagementServer\obj\Debug\busManagementServer.dll
+D:\Code\Billing\busManagementServer\obj\Debug\busManagementServer.pdb
+E:\Billing\busManagementServer\bin\Debug\busManagementServer.dll
+E:\Billing\busManagementServer\bin\Debug\busManagementServer.pdb
+E:\Billing\busManagementServer\obj\Debug\busManagementServer.csprojAssemblyReference.cache
+E:\Billing\busManagementServer\obj\Debug\busManagementServer.dll
+E:\Billing\busManagementServer\obj\Debug\busManagementServer.pdb
+C:\Code\CMIS4\02_Development\03_Coding\Billing\busManagementServer\bin\Debug\busManagementServer.dll
+C:\Code\CMIS4\02_Development\03_Coding\Billing\busManagementServer\bin\Debug\busManagementServer.pdb
+C:\Code\CMIS4\02_Development\03_Coding\Billing\busManagementServer\obj\Debug\busManagementServer.csproj.AssemblyReference.cache
+C:\Code\CMIS4\02_Development\03_Coding\Billing\busManagementServer\obj\Debug\busManagementServer.csproj.CoreCompileInputs.cache
+C:\Code\CMIS4\02_Development\03_Coding\Billing\busManagementServer\obj\Debug\busManagementServer.dll
+C:\Code\CMIS4\02_Development\03_Coding\Billing\busManagementServer\obj\Debug\busManagementServer.pdb

@@ -1,0 +1,4 @@
+D:\Code\Billing\WCFManagementService\obj\Debug\ResolveAssemblyReference.cache
+E:\Billing\WCFManagementService\obj\Debug\WCFManagementService.csprojAssemblyReference.cache
+C:\Code\CMIS4\02_Development\03_Coding\Billing\WCFManagementService\obj\Debug\WCFManagementService.csproj.AssemblyReference.cache
+C:\Code\CMIS4\02_Development\03_Coding\Billing\WCFManagementService\obj\Debug\WCFManagementService.csproj.CoreCompileInputs.cache

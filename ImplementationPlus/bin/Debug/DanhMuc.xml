@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="D_BAC_THANG">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="BTHANG_ID" type="xs:long" minOccurs="0" />
+                <xs:element name="DIEN_GIAI" type="xs:string" minOccurs="0" />
+                <xs:element name="DINH_MUC" type="xs:short" minOccurs="0" />
+                <xs:element name="DON_GIA" type="xs:decimal" minOccurs="0" />
+                <xs:element name="GIANHOMNN_ID" type="xs:long" minOccurs="0" />
+                <xs:element name="MA_NGIA" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_NHOMNN" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_NN" type="xs:string" minOccurs="0" />
+                <xs:element name="MO_TA" type="xs:string" minOccurs="0" />
+                <xs:element name="NGAY_HHLUC" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="NGAY_HLUC" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="STT_BTHANG" type="xs:short" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="D_CAP_DAP">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MA_CAPDA" type="xs:string" minOccurs="0" />
+                <xs:element name="MO_TA" type="xs:string" minOccurs="0" />
+                <xs:element name="STT_HTHI" type="xs:int" minOccurs="0" />
+                <xs:element name="TEN_CAPDA" type="xs:string" minOccurs="0" />
+                <xs:element name="TENTAT_CAPDA" type="xs:string" minOccurs="0" />
+                <xs:element name="TRANG_THAI" type="xs:short" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="D_COSFI">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="HS_COSFI" type="xs:decimal" minOccurs="0" />
+                <xs:element name="KCOSFI" type="xs:decimal" minOccurs="0" />
+                <xs:element name="MA_CNANG" type="xs:string" minOccurs="0" />
+                <xs:element name="NGAY_ADUNG" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="NGAY_SUA" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="NGAY_TAO" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="NGUOI_SUA" type="xs:string" minOccurs="0" />
+                <xs:element name="NGUOI_TAO" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="D_GIA_NHOMNN">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID_GIANHOMNN" type="xs:long" minOccurs="0" />
+                <xs:element name="BAC_THANG" type="xs:string" minOccurs="0" />
+                <xs:element name="DON_GIA" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ID_GIACU" type="xs:long" minOccurs="0" />
+                <xs:element name="KHOANG_DA" type="xs:string" minOccurs="0" />
+                <xs:element name="LOAI_TIEN" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_NGIA" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_NHOMNN" type="xs:string" minOccurs="0" />
+                <xs:element name="MOTA_GIA" type="xs:string" minOccurs="0" />
+                <xs:element name="NGAY_ADUNG" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="NGAY_HETHLUC" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="SOTHUTU" type="xs:short" minOccurs="0" />
+                <xs:element name="THOIGIAN_BDIEN" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="D_NGANH_NGHE">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MA_NHOMNN" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_NN" type="xs:string" minOccurs="0" />
+                <xs:element name="MO_TA" type="xs:string" minOccurs="0" />
+                <xs:element name="MUC_NN" type="xs:short" minOccurs="0" />
+                <xs:element name="NGAY_APDUNG" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="NGAY_HETHLUC" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="TEN_NN" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="D_NHOM_NN">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MA_NHOMNN" type="xs:string" minOccurs="0" />
+                <xs:element name="MO_TA" type="xs:string" minOccurs="0" />
+                <xs:element name="STT_HTHI" type="xs:int" minOccurs="0" />
+                <xs:element name="TEN_NHOMNN" type="xs:string" minOccurs="0" />
+                <xs:element name="TEN_TAT" type="xs:string" minOccurs="0" />
+                <xs:element name="TRANG_THAI" type="xs:short" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="D_THAMCHIEU_CAPDA">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="KHOANG_DA" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_CAPDA" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_NHOMNN" type="xs:string" minOccurs="0" />
+                <xs:element name="MO_TA" type="xs:string" minOccurs="0" />
+                <xs:element name="NGAY_ADUNG" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="NGAY_HETHLUC" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="D_TY_GIA">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID_TY_GIA" type="xs:long" minOccurs="0" />
+                <xs:element name="LOAI_TIEN" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_CNANG" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_DVIQLY" type="xs:string" minOccurs="0" />
+                <xs:element name="NAM" type="xs:short" minOccurs="0" />
+                <xs:element name="NGAY_NHAP" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="NGUOI_NHAP" type="xs:string" minOccurs="0" />
+                <xs:element name="THANG" type="xs:short" minOccurs="0" />
+                <xs:element name="TYGIA_QDOI" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>          
+          <xs:element name="S_PARAMETER">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CREATEDBY" type="xs:string" minOccurs="0" />
+                <xs:element name="CREATEDDATE" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DATATYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="DESCRIPTION" type="xs:string" minOccurs="0" />
+                <xs:element name="NAME" type="xs:string" minOccurs="0" />
+                <xs:element name="PARAMETERID" type="xs:long" minOccurs="0" />
+                <xs:element name="PARAMETERTYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="PRAVALUE" type="xs:string" minOccurs="0" />
+                <xs:element name="STARTDATE" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="STATE" type="xs:short" minOccurs="0" />
+                <xs:element name="SUBDIVISIONID" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="D_DVI_HOTRO_COVID">           
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MA_DVIQLY" type="xs:string" minOccurs="0" />
+                <xs:element name="ID_DULIEU"  type="xs:long" minOccurs="0" />               
+                <xs:element name="TRANG_THAI" type="xs:short" minOccurs="0" />                
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="D_SO_HOTRO_COVID">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MA_DVIQLY" type="xs:string" minOccurs="0" />
+                <xs:element name="ID_DULIEU"  type="xs:long" minOccurs="0" />
+                <xs:element name="MA_SOGCS" type="xs:string" minOccurs="0" />
+                <xs:element name="TRANG_THAI" type="xs:short" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>  
+</NewDataSet>

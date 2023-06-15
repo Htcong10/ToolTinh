@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WCFApplicationServer.ServiceTinhHDon" CodeBehind="ServiceTinhHDon.svc.cs" %>

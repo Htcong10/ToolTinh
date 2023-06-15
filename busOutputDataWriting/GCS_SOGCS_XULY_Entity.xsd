@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GCS_SOGCS_XULY_Entity" targetNamespace="http://tempuri.org/GCS_SOGCS_XULY_Entity.xsd" xmlns:mstns="http://tempuri.org/GCS_SOGCS_XULY_Entity.xsd" xmlns="http://tempuri.org/GCS_SOGCS_XULY_Entity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GCS_SOGCS_XULY_Entity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="GCS_SOGCS_XULY_Entity" msprop:Generator_UserDSName="GCS_SOGCS_XULY_Entity" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GCS_SOGCS_XULY" msprop:Generator_UserTableName="GCS_SOGCS_XULY" msprop:Generator_RowDeletedName="GCS_SOGCS_XULYRowDeleted" msprop:Generator_TableClassName="GCS_SOGCS_XULYDataTable" msprop:Generator_RowChangedName="GCS_SOGCS_XULYRowChanged" msprop:Generator_RowClassName="GCS_SOGCS_XULYRow" msprop:Generator_RowChangingName="GCS_SOGCS_XULYRowChanging" msprop:Generator_RowEvArgName="GCS_SOGCS_XULYRowChangeEvent" msprop:Generator_RowEvHandlerName="GCS_SOGCS_XULYRowChangeEventHandler" msprop:Generator_TablePropName="GCS_SOGCS_XULY" msprop:Generator_TableVarName="tableGCS_SOGCS_XULY" msprop:Generator_RowDeletingName="GCS_SOGCS_XULYRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CURRENTLIBID" msprop:Generator_UserColumnName="CURRENTLIBID" msprop:Generator_ColumnPropNameInRow="CURRENTLIBID" msprop:Generator_ColumnVarNameInTable="columnCURRENTLIBID" msprop:Generator_ColumnPropNameInTable="CURRENTLIBIDColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="ID_BUOCXLY" msprop:Generator_UserColumnName="ID_BUOCXLY" msprop:Generator_ColumnPropNameInRow="ID_BUOCXLY" msprop:Generator_ColumnVarNameInTable="columnID_BUOCXLY" msprop:Generator_ColumnPropNameInTable="ID_BUOCXLYColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="KY" msprop:Generator_UserColumnName="KY" msprop:Generator_ColumnPropNameInRow="KY" msprop:Generator_ColumnVarNameInTable="columnKY" msprop:Generator_ColumnPropNameInTable="KYColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="MA_CNANG" msprop:Generator_UserColumnName="MA_CNANG" msprop:Generator_ColumnPropNameInRow="MA_CNANG" msprop:Generator_ColumnVarNameInTable="columnMA_CNANG" msprop:Generator_ColumnPropNameInTable="MA_CNANGColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MA_DVIQLY" msprop:Generator_UserColumnName="MA_DVIQLY" msprop:Generator_ColumnPropNameInRow="MA_DVIQLY" msprop:Generator_ColumnVarNameInTable="columnMA_DVIQLY" msprop:Generator_ColumnPropNameInTable="MA_DVIQLYColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MA_SOGCS" msprop:Generator_UserColumnName="MA_SOGCS" msprop:Generator_ColumnPropNameInRow="MA_SOGCS" msprop:Generator_ColumnVarNameInTable="columnMA_SOGCS" msprop:Generator_ColumnPropNameInTable="MA_SOGCSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NAM" msprop:Generator_UserColumnName="NAM" msprop:Generator_ColumnPropNameInRow="NAM" msprop:Generator_ColumnVarNameInTable="columnNAM" msprop:Generator_ColumnPropNameInTable="NAMColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="NEXTLIBID" msprop:Generator_UserColumnName="NEXTLIBID" msprop:Generator_ColumnPropNameInRow="NEXTLIBID" msprop:Generator_ColumnVarNameInTable="columnNEXTLIBID" msprop:Generator_ColumnPropNameInTable="NEXTLIBIDColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="NGAY_BDAU" msprop:Generator_UserColumnName="NGAY_BDAU" msprop:Generator_ColumnPropNameInRow="NGAY_BDAU" msprop:Generator_ColumnVarNameInTable="columnNGAY_BDAU" msprop:Generator_ColumnPropNameInTable="NGAY_BDAUColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NGAY_KTHUC" msprop:Generator_UserColumnName="NGAY_KTHUC" msprop:Generator_ColumnPropNameInRow="NGAY_KTHUC" msprop:Generator_ColumnVarNameInTable="columnNGAY_KTHUC" msprop:Generator_ColumnPropNameInTable="NGAY_KTHUCColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NGAY_SUA" msprop:Generator_UserColumnName="NGAY_SUA" msprop:Generator_ColumnPropNameInRow="NGAY_SUA" msprop:Generator_ColumnVarNameInTable="columnNGAY_SUA" msprop:Generator_ColumnPropNameInTable="NGAY_SUAColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NGAY_TAO" msprop:Generator_UserColumnName="NGAY_TAO" msprop:Generator_ColumnPropNameInRow="NGAY_TAO" msprop:Generator_ColumnVarNameInTable="columnNGAY_TAO" msprop:Generator_ColumnPropNameInTable="NGAY_TAOColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NGUOI_SUA" msprop:Generator_UserColumnName="NGUOI_SUA" msprop:Generator_ColumnPropNameInRow="NGUOI_SUA" msprop:Generator_ColumnVarNameInTable="columnNGUOI_SUA" msprop:Generator_ColumnPropNameInTable="NGUOI_SUAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NGUOI_TAO" msprop:Generator_UserColumnName="NGUOI_TAO" msprop:Generator_ColumnPropNameInRow="NGUOI_TAO" msprop:Generator_ColumnVarNameInTable="columnNGUOI_TAO" msprop:Generator_ColumnPropNameInTable="NGUOI_TAOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NGUOI_THIEN" msprop:Generator_UserColumnName="NGUOI_THIEN" msprop:Generator_ColumnPropNameInRow="NGUOI_THIEN" msprop:Generator_ColumnVarNameInTable="columnNGUOI_THIEN" msprop:Generator_ColumnPropNameInTable="NGUOI_THIENColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PATH" msprop:Generator_UserColumnName="PATH" msprop:Generator_ColumnPropNameInRow="PATH" msprop:Generator_ColumnVarNameInTable="columnPATH" msprop:Generator_ColumnPropNameInTable="PATHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RESULTSTATE" msprop:Generator_UserColumnName="RESULTSTATE" msprop:Generator_ColumnPropNameInRow="RESULTSTATE" msprop:Generator_ColumnVarNameInTable="columnRESULTSTATE" msprop:Generator_ColumnPropNameInTable="RESULTSTATEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="THANG" msprop:Generator_UserColumnName="THANG" msprop:Generator_ColumnPropNameInRow="THANG" msprop:Generator_ColumnVarNameInTable="columnTHANG" msprop:Generator_ColumnPropNameInTable="THANGColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="WORKFLOWID" msprop:Generator_UserColumnName="WORKFLOWID" msprop:Generator_ColumnPropNameInRow="WORKFLOWID" msprop:Generator_ColumnVarNameInTable="columnWORKFLOWID" msprop:Generator_ColumnPropNameInTable="WORKFLOWIDColumn" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

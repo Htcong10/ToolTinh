@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KillSelfNew">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strMaDViQLy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strTenDNhap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMaCNang" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strTimeStamp" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ObjectType" type="tns:LoaiDoiTuong" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="LoaiDoiTuong">
+        <s:restriction base="s:string">
+          <s:enumeration value="DIEM_DO" />
+          <s:enumeration value="SO_GCS" />
+          <s:enumeration value="KHACH_HANG" />
+          <s:enumeration value="HOP_DONG" />
+          <s:enumeration value="PHIEU_THU" />
+          <s:enumeration value="BBAN_APGIA" />
+          <s:enumeration value="BBAN_GTHU" />
+          <s:enumeration value="BBAN_QTOAN" />
+          <s:enumeration value="BBAN_TRTH" />
+          <s:enumeration value="YEU_CAU" />
+          <s:enumeration value="CONG_TO" />
+          <s:enumeration value="TU" />
+          <s:enumeration value="TI" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="KillSelfNewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="KillSelfNewResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strTimeStamp" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMaSoGCS">
+        <s:complexType />
+      </s:element>
+      <s:element name="getMaSoGCSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMaSoGCSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CountMaSoGCS">
+        <s:complexType />
+      </s:element>
+      <s:element name="CountMaSoGCSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CountMaSoGCSResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertDSachSo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsDSachMoi">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertDSachSoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertDSachSoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteMaSoGCS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strMaDViQLy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMaSoGCS" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="i16Ky" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="i16Thang" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="i16Nam" type="s:short" />
+            <s:element minOccurs="0" maxOccurs="1" name="strTenDNhap" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="lngCurrentLibID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="lngWorkflowID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteMaSoGCSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteMaSoGCSResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSoGCS_Queue">
+        <s:complexType />
+      </s:element>
+      <s:element name="getSoGCS_QueueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSoGCS_QueueResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLogByNumOfRecord">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intNumRecord" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLogByNumOfRecordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getLogByNumOfRecordResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLogBySubdivisionID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SubdivisionID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intNumRecord" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLogBySubdivisionIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getLogBySubdivisionIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLogByBookID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SubdivisionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMaSoGCS" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intNumRecord" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLogByBookIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getLogByBookIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteByMaSoGCS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strMaDViQLy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMaSoGCS" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteByMaSoGCSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteByMaSoGCSResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteByLogID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strMaDViQLy" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="lngLogID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteByLogIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteByLogIDResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getInvoiceData_ForCalculation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strMaDViQLy" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ky" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="thang" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="nam" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getInvoiceData_ForCalculationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getInvoiceData_ForCalculationResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getInvoiceData_ForCancel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strMaDViQLy" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ky" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="thang" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="nam" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getInvoiceData_ForCancelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getInvoiceData_ForCancelResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelInvoiceCalculation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strMaDViQLy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMaSoGCs" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="strTenDNhap" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="lngCurrentLibID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="lngWorkflowID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="i16Ky" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="i16Thang" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="i16Nam" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CancelInvoiceCalculationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CancelInvoiceCalculationResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInvoice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strMaDViQLy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMaSoGCS" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="i16Ky" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="i16Thang" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="i16Nam" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInvoiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInvoiceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSoGCS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strMaDViQLy" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="i16Ky" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="i16Thang" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="i16Nam" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSoGCSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSoGCSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="KillSelfNewSoapIn">
+    <wsdl:part name="parameters" element="tns:KillSelfNew" />
+  </wsdl:message>
+  <wsdl:message name="KillSelfNewSoapOut">
+    <wsdl:part name="parameters" element="tns:KillSelfNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMaSoGCSSoapIn">
+    <wsdl:part name="parameters" element="tns:getMaSoGCS" />
+  </wsdl:message>
+  <wsdl:message name="getMaSoGCSSoapOut">
+    <wsdl:part name="parameters" element="tns:getMaSoGCSResponse" />
+  </wsdl:message>
+  <wsdl:message name="CountMaSoGCSSoapIn">
+    <wsdl:part name="parameters" element="tns:CountMaSoGCS" />
+  </wsdl:message>
+  <wsdl:message name="CountMaSoGCSSoapOut">
+    <wsdl:part name="parameters" element="tns:CountMaSoGCSResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertDSachSoSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertDSachSo" />
+  </wsdl:message>
+  <wsdl:message name="InsertDSachSoSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertDSachSoResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteMaSoGCSSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteMaSoGCS" />
+  </wsdl:message>
+  <wsdl:message name="DeleteMaSoGCSSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteMaSoGCSResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSoGCS_QueueSoapIn">
+    <wsdl:part name="parameters" element="tns:getSoGCS_Queue" />
+  </wsdl:message>
+  <wsdl:message name="getSoGCS_QueueSoapOut">
+    <wsdl:part name="parameters" element="tns:getSoGCS_QueueResponse" />
+  </wsdl:message>
+  <wsdl:message name="getLogByNumOfRecordSoapIn">
+    <wsdl:part name="parameters" element="tns:getLogByNumOfRecord" />
+  </wsdl:message>
+  <wsdl:message name="getLogByNumOfRecordSoapOut">
+    <wsdl:part name="parameters" element="tns:getLogByNumOfRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="getLogBySubdivisionIDSoapIn">
+    <wsdl:part name="parameters" element="tns:getLogBySubdivisionID" />
+  </wsdl:message>
+  <wsdl:message name="getLogBySubdivisionIDSoapOut">
+    <wsdl:part name="parameters" element="tns:getLogBySubdivisionIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="getLogByBookIDSoapIn">
+    <wsdl:part name="parameters" element="tns:getLogByBookID" />
+  </wsdl:message>
+  <wsdl:message name="getLogByBookIDSoapOut">
+    <wsdl:part name="parameters" element="tns:getLogByBookIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteByMaSoGCSSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteByMaSoGCS" />
+  </wsdl:message>
+  <wsdl:message name="DeleteByMaSoGCSSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteByMaSoGCSResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteByLogIDSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteByLogID" />
+  </wsdl:message>
+  <wsdl:message name="DeleteByLogIDSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteByLogIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="getInvoiceData_ForCalculationSoapIn">
+    <wsdl:part name="parameters" element="tns:getInvoiceData_ForCalculation" />
+  </wsdl:message>
+  <wsdl:message name="getInvoiceData_ForCalculationSoapOut">
+    <wsdl:part name="parameters" element="tns:getInvoiceData_ForCalculationResponse" />
+  </wsdl:message>
+  <wsdl:message name="getInvoiceData_ForCancelSoapIn">
+    <wsdl:part name="parameters" element="tns:getInvoiceData_ForCancel" />
+  </wsdl:message>
+  <wsdl:message name="getInvoiceData_ForCancelSoapOut">
+    <wsdl:part name="parameters" element="tns:getInvoiceData_ForCancelResponse" />
+  </wsdl:message>
+  <wsdl:message name="CancelInvoiceCalculationSoapIn">
+    <wsdl:part name="parameters" element="tns:CancelInvoiceCalculation" />
+  </wsdl:message>
+  <wsdl:message name="CancelInvoiceCalculationSoapOut">
+    <wsdl:part name="parameters" element="tns:CancelInvoiceCalculationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInvoiceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInvoice" />
+  </wsdl:message>
+  <wsdl:message name="GetInvoiceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSoGCSSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSoGCS" />
+  </wsdl:message>
+  <wsdl:message name="GetSoGCSSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSoGCSResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ApplicationServerSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KillSelfNew">
+      <wsdl:input message="tns:KillSelfNewSoapIn" />
+      <wsdl:output message="tns:KillSelfNewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMaSoGCS">
+      <wsdl:input message="tns:getMaSoGCSSoapIn" />
+      <wsdl:output message="tns:getMaSoGCSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CountMaSoGCS">
+      <wsdl:input message="tns:CountMaSoGCSSoapIn" />
+      <wsdl:output message="tns:CountMaSoGCSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDSachSo">
+      <wsdl:input message="tns:InsertDSachSoSoapIn" />
+      <wsdl:output message="tns:InsertDSachSoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMaSoGCS">
+      <wsdl:input message="tns:DeleteMaSoGCSSoapIn" />
+      <wsdl:output message="tns:DeleteMaSoGCSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSoGCS_Queue">
+      <wsdl:input message="tns:getSoGCS_QueueSoapIn" />
+      <wsdl:output message="tns:getSoGCS_QueueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getLogByNumOfRecord">
+      <wsdl:input message="tns:getLogByNumOfRecordSoapIn" />
+      <wsdl:output message="tns:getLogByNumOfRecordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getLogBySubdivisionID">
+      <wsdl:input message="tns:getLogBySubdivisionIDSoapIn" />
+      <wsdl:output message="tns:getLogBySubdivisionIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getLogByBookID">
+      <wsdl:input message="tns:getLogByBookIDSoapIn" />
+      <wsdl:output message="tns:getLogByBookIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteByMaSoGCS">
+      <wsdl:input message="tns:DeleteByMaSoGCSSoapIn" />
+      <wsdl:output message="tns:DeleteByMaSoGCSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteByLogID">
+      <wsdl:input message="tns:DeleteByLogIDSoapIn" />
+      <wsdl:output message="tns:DeleteByLogIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getInvoiceData_ForCalculation">
+      <wsdl:input message="tns:getInvoiceData_ForCalculationSoapIn" />
+      <wsdl:output message="tns:getInvoiceData_ForCalculationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getInvoiceData_ForCancel">
+      <wsdl:input message="tns:getInvoiceData_ForCancelSoapIn" />
+      <wsdl:output message="tns:getInvoiceData_ForCancelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelInvoiceCalculation">
+      <wsdl:input message="tns:CancelInvoiceCalculationSoapIn" />
+      <wsdl:output message="tns:CancelInvoiceCalculationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoice">
+      <wsdl:input message="tns:GetInvoiceSoapIn" />
+      <wsdl:output message="tns:GetInvoiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSoGCS">
+      <wsdl:input message="tns:GetSoGCSSoapIn" />
+      <wsdl:output message="tns:GetSoGCSSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ApplicationServerSoap" type="tns:ApplicationServerSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KillSelfNew">
+      <soap:operation soapAction="http://tempuri.org/KillSelfNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMaSoGCS">
+      <soap:operation soapAction="http://tempuri.org/getMaSoGCS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CountMaSoGCS">
+      <soap:operation soapAction="http://tempuri.org/CountMaSoGCS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDSachSo">
+      <soap:operation soapAction="http://tempuri.org/InsertDSachSo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMaSoGCS">
+      <soap:operation soapAction="http://tempuri.org/DeleteMaSoGCS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSoGCS_Queue">
+      <soap:operation soapAction="http://tempuri.org/getSoGCS_Queue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLogByNumOfRecord">
+      <soap:operation soapAction="http://tempuri.org/getLogByNumOfRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLogBySubdivisionID">
+      <soap:operation soapAction="http://tempuri.org/getLogBySubdivisionID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLogByBookID">
+      <soap:operation soapAction="http://tempuri.org/getLogByBookID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteByMaSoGCS">
+      <soap:operation soapAction="http://tempuri.org/DeleteByMaSoGCS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteByLogID">
+      <soap:operation soapAction="http://tempuri.org/DeleteByLogID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInvoiceData_ForCalculation">
+      <soap:operation soapAction="http://tempuri.org/getInvoiceData_ForCalculation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInvoiceData_ForCancel">
+      <soap:operation soapAction="http://tempuri.org/getInvoiceData_ForCancel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelInvoiceCalculation">
+      <soap:operation soapAction="http://tempuri.org/CancelInvoiceCalculation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoice">
+      <soap:operation soapAction="http://tempuri.org/GetInvoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSoGCS">
+      <soap:operation soapAction="http://tempuri.org/GetSoGCS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ApplicationServerSoap12" type="tns:ApplicationServerSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KillSelfNew">
+      <soap12:operation soapAction="http://tempuri.org/KillSelfNew" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMaSoGCS">
+      <soap12:operation soapAction="http://tempuri.org/getMaSoGCS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CountMaSoGCS">
+      <soap12:operation soapAction="http://tempuri.org/CountMaSoGCS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDSachSo">
+      <soap12:operation soapAction="http://tempuri.org/InsertDSachSo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMaSoGCS">
+      <soap12:operation soapAction="http://tempuri.org/DeleteMaSoGCS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSoGCS_Queue">
+      <soap12:operation soapAction="http://tempuri.org/getSoGCS_Queue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLogByNumOfRecord">
+      <soap12:operation soapAction="http://tempuri.org/getLogByNumOfRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLogBySubdivisionID">
+      <soap12:operation soapAction="http://tempuri.org/getLogBySubdivisionID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLogByBookID">
+      <soap12:operation soapAction="http://tempuri.org/getLogByBookID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteByMaSoGCS">
+      <soap12:operation soapAction="http://tempuri.org/DeleteByMaSoGCS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteByLogID">
+      <soap12:operation soapAction="http://tempuri.org/DeleteByLogID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInvoiceData_ForCalculation">
+      <soap12:operation soapAction="http://tempuri.org/getInvoiceData_ForCalculation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInvoiceData_ForCancel">
+      <soap12:operation soapAction="http://tempuri.org/getInvoiceData_ForCancel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelInvoiceCalculation">
+      <soap12:operation soapAction="http://tempuri.org/CancelInvoiceCalculation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoice">
+      <soap12:operation soapAction="http://tempuri.org/GetInvoice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSoGCS">
+      <soap12:operation soapAction="http://tempuri.org/GetSoGCS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ApplicationServer">
+    <wsdl:port name="ApplicationServerSoap" binding="tns:ApplicationServerSoap">
+      <soap:address location="http://localhost/ApplicationServer/ApplicationServer.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ApplicationServerSoap12" binding="tns:ApplicationServerSoap12">
+      <soap12:address location="http://localhost/ApplicationServer/ApplicationServer.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

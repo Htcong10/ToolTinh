@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkPhuGhepTong_Service">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strMaDViQLy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMaSoGCS" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="i16Ky" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="i16Thang" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="i16Nam" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkPhuGhepTong_ServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="checkPhuGhepTong_ServiceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCustomerDataReading_Service">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsCustomerData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="strMaDViQLy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMaSoGCS" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="i16Ky" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="i16Thang" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="i16Nam" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCustomerDataReading_ServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCustomerDataReading_ServiceResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dsCustomerData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getStaticCatalogDataReading_Service">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsStaticCatalog">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getStaticCatalogDataReading_ServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getStaticCatalogDataReading_ServiceResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dsStaticCatalog">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkPhuGhepTong_ServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:checkPhuGhepTong_Service" />
+  </wsdl:message>
+  <wsdl:message name="checkPhuGhepTong_ServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:checkPhuGhepTong_ServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCustomerDataReading_ServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:getCustomerDataReading_Service" />
+  </wsdl:message>
+  <wsdl:message name="getCustomerDataReading_ServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:getCustomerDataReading_ServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="getStaticCatalogDataReading_ServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:getStaticCatalogDataReading_Service" />
+  </wsdl:message>
+  <wsdl:message name="getStaticCatalogDataReading_ServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:getStaticCatalogDataReading_ServiceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Service_DebugTHDSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="checkPhuGhepTong_Service">
+      <wsdl:input message="tns:checkPhuGhepTong_ServiceSoapIn" />
+      <wsdl:output message="tns:checkPhuGhepTong_ServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerDataReading_Service">
+      <wsdl:input message="tns:getCustomerDataReading_ServiceSoapIn" />
+      <wsdl:output message="tns:getCustomerDataReading_ServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getStaticCatalogDataReading_Service">
+      <wsdl:input message="tns:getStaticCatalogDataReading_ServiceSoapIn" />
+      <wsdl:output message="tns:getStaticCatalogDataReading_ServiceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Service_DebugTHDSoap" type="tns:Service_DebugTHDSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkPhuGhepTong_Service">
+      <soap:operation soapAction="http://tempuri.org/checkPhuGhepTong_Service" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerDataReading_Service">
+      <soap:operation soapAction="http://tempuri.org/getCustomerDataReading_Service" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStaticCatalogDataReading_Service">
+      <soap:operation soapAction="http://tempuri.org/getStaticCatalogDataReading_Service" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service_DebugTHDSoap12" type="tns:Service_DebugTHDSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkPhuGhepTong_Service">
+      <soap12:operation soapAction="http://tempuri.org/checkPhuGhepTong_Service" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerDataReading_Service">
+      <soap12:operation soapAction="http://tempuri.org/getCustomerDataReading_Service" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStaticCatalogDataReading_Service">
+      <soap12:operation soapAction="http://tempuri.org/getStaticCatalogDataReading_Service" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service_DebugTHD">
+    <wsdl:port name="Service_DebugTHDSoap" binding="tns:Service_DebugTHDSoap">
+      <soap:address location="http://10.1.6.215/serviceTHD/Service_DebugTHD.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service_DebugTHDSoap12" binding="tns:Service_DebugTHDSoap12">
+      <soap12:address location="http://10.1.6.215/serviceTHD/Service_DebugTHD.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

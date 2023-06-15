@@ -1,0 +1,16 @@
+D:\Code\Billing\BillingConfigurationObject\bin\Debug\BillingConfigurationObject.dll
+D:\Code\Billing\BillingConfigurationObject\bin\Debug\BillingConfigurationObject.pdb
+D:\Code\Billing\BillingConfigurationObject\obj\Debug\ResolveAssemblyReference.cache
+D:\Code\Billing\BillingConfigurationObject\obj\Debug\BillingConfigurationObject.dll
+D:\Code\Billing\BillingConfigurationObject\obj\Debug\BillingConfigurationObject.pdb
+F:\Code\Billing\BillingConfigurationObject\bin\Debug\BillingConfigurationObject.dll
+F:\Code\Billing\BillingConfigurationObject\bin\Debug\BillingConfigurationObject.pdb
+F:\Code\Billing\BillingConfigurationObject\obj\Debug\ResolveAssemblyReference.cache
+F:\Code\Billing\BillingConfigurationObject\obj\Debug\BillingConfigurationObject.dll
+F:\Code\Billing\BillingConfigurationObject\obj\Debug\BillingConfigurationObject.pdb
+E:\Billing\BillingConfigurationObject\bin\Debug\BillingConfigurationObject.dll
+E:\Billing\BillingConfigurationObject\bin\Debug\BillingConfigurationObject.pdb
+E:\Billing\BillingConfigurationObject\obj\Debug\BillingConfigurationObject.dll
+E:\Billing\BillingConfigurationObject\obj\Debug\BillingConfigurationObject.pdb
+E:\Billing\BillingConfigurationObject\obj\Debug\BillingConfigurationObject.csprojAssemblyReference.cache
+E:\Billing\BillingConfigurationObject\obj\Debug\BillingConfigurationObject.csproj.CoreCompileInputs.cache
